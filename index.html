@@ -57,35 +57,25 @@
         <li><a href="menu/oder.html">Оформить заявку</a></li>
     </ul>
 </div>
-<div class="newsbar">
-    <h1>Новости</h1>
-    <div class="news-carousel">
-        <!-- Каждый элемент с классом news-item является слайдом в карусели -->
-        <div class="news-item">
-            <div class="news-content">
-                <p>
-                    Наша компания приняла участие в международной специализированной выставке «МЕДИЦИНА И ЗДОРОВЬЕ - 2023» и представила на выставочном стенде все предлагаемое оборудование для медицинского освидетельствования на состояние алкогольного и наркотического опьянения.
-                    <a href="menu/exhibition.html" class="more-info">Подробнее</a>
-                </p>
-            </div>
-        </div>
-        
-        <div class="news-item">
-            <div class="news-content">
-                <p>
-                    ВНИМАНИЕ: Анализаторы паров алкоголя в выдыхаемом воздухе успешно прошли очередные государственные испытания на утверждение типа средств измерений.
-                    <a href="menu/alcometrs/docs_alcometrs.html" class="more-info">Подробнее</a>
-                </p>
-            </div>
-        </div>
 
-        <div class="news-item">
-            <div class="news-content">
-                <p>
-                    В Беларуси принят закон «О внесении изменений и дополнений в некоторые кодексы Республики Беларусь по вопросам усиления мер ответственности за управление транспортным средством в состоянии опьянения».
-                    <a href="menu/laws.html#sixth" class="more-info">Подробнее</a>
-                </p>
-            </div>
+<div class="popular-carousel">
+<div class="product-item">
+            <img src="product1.jpg" alt="Алкотестер 1">
+            <h3>Алкотестер 1</h3>
+            <p>Описание товара 1</p>
+            <a href="#" class="buy-btn">Купить</a>
+        </div>
+        <div class="product-item">
+            <img src="product2.jpg" alt="Алкометр 2">
+            <h3>Алкометр 2</h3>
+            <p>Описание товара 2</p>
+            <a href="#" class="buy-btn">Купить</a>
+        </div>
+        <div class="product-item">
+            <img src="product3.jpg" alt="Тесты на наркотики">
+            <h3>Тесты на наркотики</h3>
+            <p>Описание товара 3</p>
+            <a href="#" class="buy-btn">Купить</a>
         </div>
     </div>
 </div>
@@ -93,16 +83,17 @@
 <script>
     // Инициализация карусели после загрузки документа
     $(document).ready(function(){
-        $('.news-carousel').slick({
-            dots: true, // Отображение точек навигации
-            infinite: true, // Зацикленная прокрутка
-            slidesToShow: 1, // Количество отображаемых слайдов
-            slidesToScroll: 1 // Количество пролистываемых слайдов
+        $('.popular-carousel').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1
         });
     });
 </script>
+    
 <div class="content">
-    <h1>Главная</h1>
+    <h1>О нас</h1>
     <br />
     <div class="links">
         <a href="main/1.html"><img src="1st.jpg" alt="Проверка на опасном производстве"></a>
@@ -148,6 +139,50 @@
 
 <!-- Удачных покупок -->
 <h4>Ждем вас в числе наших постоянных клиентов!</h4>
+<div class="newsbar">
+<h1>Новости</h1>
+    <div class="news-carousel">
+        <!-- Каждый элемент с классом news-item является слайдом в карусели -->
+        <div class="news-item">
+            <div class="news-content">
+                <p>
+                    Наша компания приняла участие в международной специализированной выставке «МЕДИЦИНА И ЗДОРОВЬЕ - 2023» и представила на выставочном стенде все предлагаемое оборудование для медицинского освидетельствования на состояние алкогольного и наркотического опьянения.
+                    <a href="menu/exhibition.html" class="more-info">Подробнее</a>
+                </p>
+            </div>
+        </div>
+        
+        <div class="news-item">
+            <div class="news-content">
+                <p>
+                    ВНИМАНИЕ: Анализаторы паров алкоголя в выдыхаемом воздухе успешно прошли очередные государственные испытания на утверждение типа средств измерений.
+                    <a href="menu/alcometrs/docs_alcometrs.html" class="more-info">Подробнее</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="news-item">
+            <div class="news-content">
+                <p>
+                    В Беларуси принят закон «О внесении изменений и дополнений в некоторые кодексы Республики Беларусь по вопросам усиления мер ответственности за управление транспортным средством в состоянии опьянения».
+                    <a href="menu/laws.html#sixth" class="more-info">Подробнее</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Инициализация карусели после загрузки документа
+    $(document).ready(function(){
+        $('.news-carousel').slick({
+            dots: true, // Отображение точек навигации
+            infinite: true, // Зацикленная прокрутка
+            slidesToShow: 1, // Количество отображаемых слайдов
+            slidesToScroll: 1 // Количество пролистываемых слайдов
+        });
+    });
+</script>
 
       </div>
     <div class="clearfix"></div>
